@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 import Project from "./Project"
 import Title from "./Title"
+
 const Projects = ({ projects, title, showLink }) => {
   return (
     <section className="section projects">
