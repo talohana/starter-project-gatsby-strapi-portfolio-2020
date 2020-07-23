@@ -9,9 +9,9 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
       <button className="close-btn" onClick={toggleSidebar}>
         <FaTimes />
       </button>
-      <div className="side-container">
-        <Links styleClass="sidebar-links" />
-        <SocialLinks styleClass="sidebar-icons" />
+      <div className={(isOpen && "side-container") || ""}>
+        <Links styleClass={(isOpen && "sidebar-links") || ""} />
+        <SocialLinks styleClass={(isOpen && "sidebar-icons") || ""} />
       </div>
     </aside>
   )
